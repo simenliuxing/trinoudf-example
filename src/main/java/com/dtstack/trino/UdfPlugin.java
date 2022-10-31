@@ -13,9 +13,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.github.archongum.trino;
+package com.dtstack.trino;
 
-import com.github.archongum.trino.udf.scalar.CommonFunctions;
+import com.dtstack.trino.udf.scalar.CommonFunctions;
 import io.trino.spi.Plugin;
 
 import java.util.HashSet;

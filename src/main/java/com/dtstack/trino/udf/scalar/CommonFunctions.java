@@ -1,4 +1,4 @@
-package com.github.archongum.trino.udf.scalar;
+package com.dtstack.trino.udf.scalar;
 
 import io.airlift.slice.Slice;
 import io.trino.spi.function.Description;
