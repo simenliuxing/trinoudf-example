@@ -44,4 +44,10 @@
    1. 下载对应版本的jar，放在随意目录下：https://repo1.maven.org/maven2/io/trino/trino-cli/
    2. cd到jar目录下执行重命名操作：mv xxx.jar trino
    3. 进入终端：./trino --server http://ip:port --catalog tpch --schema tiny
-   4. 执行udf函数：select getStrX('1212121211112212121'); select get_full_acct_no('1111111111111111');  即可验证
+   4. 进入终端：./trino --server http://172.16.8.89:8181 --catalog tpch --schema tiny (admin)
+   5. 执行udf函数：<br>
+   SHOW TABLES; <br>
+   SELECT count(*) FROM tpch.tiny.nation; <br>
+   select getStrX('1212121211112212121'); <br>
+   select get_full_acct_no('1111111111111111');  <br>
+   即可验证
