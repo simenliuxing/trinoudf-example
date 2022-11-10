@@ -17,6 +17,7 @@ package com.dtstack.trino;
 
 import com.dtstack.trino.udf.scalar.CommonFunctions;
 import com.dtstack.trino.udf.scalar.IPtoLocation;
+import com.dtstack.trino.udf.scalar.MonthBetween;
 import io.trino.spi.Plugin;
 
 import java.util.HashSet;
@@ -32,6 +33,7 @@ public class UdfPlugin implements Plugin {
         Set<Class<?>> set = new HashSet<>();
 //        set.add(CommonFunctions.class);
         set.add(IPtoLocation.class);
+        set.add(MonthBetween.class);
         return set;
     }
 }
